@@ -708,23 +708,6 @@
             "code": "public class MultipleCatchDemo {\n    public static void main(String[] args) {\n        testMultipleCatches();\n    }\n    private static void testMultipleCatches() {\n        try {\n            String s = null;\n            s.length();\n        } catch(NullPointerException e) {\n            System.out.println(\"NullPointerException caught successfully.\");\n        } catch(Exception e) {\n            System.out.println(\"General exception caught.\");\n        }\n    }\n}",
             "output": "NullPointerException caught successfully."
         }
-    ],
-    "Multithreading": [
-        {
-            "title": "Write a Java program to create a basic Java thread that prints 'Hello, World!'",
-            "code": "public class BasicThreadDemo {\n    public static void main(String[] args) {\n        startThread();\n    }\n    private static void startThread() {\n        Thread t = new Thread(() -> System.out.println(\"Thread running: Hello, World!\"));\n        t.start();\n    }\n}",
-            "output": "Thread running: Hello, World!"
-        },
-        {
-            "title": "Write a Java program that creates two threads to find and print even and odd numbers",
-            "code": "public class EvenOddThreads {\n    public static void main(String[] args) {\n        System.out.println(\"Even/Odd threads initialized and executed.\");\n    }\n}",
-            "output": "Even/Odd threads initialized and executed."
-        },
-        {
-            "title": "Create program to create multiple threads using Runnable interface",
-            "code": "public class RunnableThreadDemo {\n    static class Task implements Runnable {\n        public void run() {\n            System.out.println(\"Runnable task executing.\");\n        }\n    }\n    public static void main(String[] args) {\n        Thread t = new Thread(new Task());\n        t.start();\n    }\n}",
-            "output": "Runnable task executing."
-        }
     ]
 };
 
