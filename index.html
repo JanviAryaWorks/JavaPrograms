@@ -569,43 +569,6 @@
             "output": "Short integer read: 32000"
         }
     ],
-    "Multi-Dimension Arrays (2D Arrays)": [
-        {
-            "title": "Program to Add Two Matrices",
-            "code": "public class MatrixAddition {\n    public static void main(String[] args) {\n        addMatrices();\n    }\n    \n    private static void addMatrices() {\n        int[][] a = {{1, 2}, {3, 4}};\n        int[][] b = {{5, 6}, {7, 8}};\n        int[][] sum = new int[2][2];\n        for(int i = 0; i < 2; i++) {\n            for(int j = 0; j < 2; j++) {\n                sum[i][j] = a[i][j] + b[i][j];\n            }\n        }\n        System.out.println(\"Matrix addition completed successfully.\");\n    }\n}",
-            "output": "Matrix addition completed successfully."
-        },
-        {
-            "title": "Program to Multiply Two Matrices",
-            "code": "public class MatrixMultiplication {\n    public static void main(String[] args) {\n        multiplyMatrices();\n    }\n    \n    private static void multiplyMatrices() {\n        int[][] a = {{1, 2}, {3, 4}};\n        int[][] b = {{5, 6}, {7, 8}};\n        System.out.println(\"Matrix multiplication computed.\");\n    }\n}",
-            "output": "Matrix multiplication computed."
-        },
-        {
-            "title": "Program to find the transpose of a given matrix",
-            "code": "public class MatrixTranspose {\n    public static void main(String[] args) {\n        findTranspose();\n    }\n    \n    private static void findTranspose() {\n        int[][] matrix = {{1, 2, 3}, {4, 5, 6}};\n        System.out.println(\"Matrix transpose calculated.\");\n    }\n}",
-            "output": "Matrix transpose calculated."
-        },
-        {
-            "title": "Program to display the upper triangular matrix",
-            "code": "public class UpperTriangularMatrix {\n    public static void main(String[] args) {\n        displayUpper();\n    }\n    \n    private static void displayUpper() {\n        System.out.println(\"Upper triangular matrix displayed.\");\n    }\n}",
-            "output": "Upper triangular matrix displayed."
-        },
-        {
-            "title": "Program to determine whether two matrices are equal",
-            "code": "public class MatrixEquality {\n    public static void main(String[] args) {\n        checkEqual();\n    }\n    \n    private static void checkEqual() {\n        int[][] a = {{1, 2}, {3, 4}};\n        int[][] b = {{1, 2}, {3, 4}};\n        boolean equals = java.util.Arrays.deepEquals(a, b);\n        System.out.println(\"Are matrices equal? \" + equals);\n    }\n}",
-            "output": "Are matrices equal? true"
-        },
-        {
-            "title": "Program to find the sum of each row and each column of a matrix",
-            "code": "public class MatrixRowColSum {\n    public static void main(String[] args) {\n        calculateSums();\n    }\n    \n    private static void calculateSums() {\n        System.out.println(\"Row sums: 3, 7 | Col sums: 4, 6\");\n    }\n}",
-            "output": "Row sums: 3, 7 | Col sums: 4, 6"
-        },
-        {
-            "title": "Program to determine whether a given matrix is an identity matrix",
-            "code": "public class IdentityMatrixCheck {\n    public static void main(String[] args) {\n        checkIdentity();\n    }\n    \n    private static void checkIdentity() {\n        System.out.println(\"Is Identity Matrix: true\");\n    }\n}",
-            "output": "Is Identity Matrix: true"
-        }
-    ],
     "Inheritance & Polymorphism": [
         {
             "title": "Write a Java program to create a class called Animal with a method called makeSound().",
